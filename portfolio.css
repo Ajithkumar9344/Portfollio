@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+body{
+    background: #081b29;
+    color: #ededed;
+}
+.header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 10%;
+background:transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+transition: 3s;
+gap: 50px;
+}
+.logo{
+  position:relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 2s;
+}
+.navber a {
+font-size: 18px;
+color: #ededed;
+text-decoration: none;
+font-weight:500;
+margin-left: 35px;
+transition: 3s;
+}
+.navber a:hover,
+.navber a.active {
+    color: #f104f9;
+}
+.active::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 2.2s;
+}
+.home {
+  background: url(img11.jpg) no-repeat;
+  background-size: cover;
+  background-position:center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-contect{
+    max-width: 400px;
+}
+.home-contect h1{
+  position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+.home-contect h1::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 1.2s;
+}
+.home-contect h3{
+  position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #d60eae;
+
+}
+
+.home-contect h3::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 1.4s;
+}
+.home-contect p {
+  position: relative;
+    font-size:16px;
+    margin: 20px 0 40px;
+}
+.home-contect p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 1.6s;
+}
+.home-contect .btn-box {
+  position: relative;
+    display: flex;
+    justify-content:space-between;
+    width: 345px;
+    height: 40px;
+   
+}
+.home-contect .btn-box::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 1.8s;
+  z-index: 2;
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #0ecee3;
+    border:  2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 2s;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.btn-box a:nth-child(2):hover{
+    color:#081b29
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
+}
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background:#081b29;
+    z-index:-1 ;
+    transition: 2s;
+}
+.btn-box a:hover::before{
+    width: 100%;
+}
+.home-sci{
+    position: absolute;
+    margin-left: 160px;
+    bottom: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-sci::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:#000305;
+  animation:showRIGHT 1s ease forwards;
+  animation-delay: 2s;
+  z-index: 2;
+}
+
+.home-sci a{
+    position: relative;
+       display: inline-flex;
+       justify-content:center;
+       align-items: center;
+       width: 40px;
+       height: 40px;
+       background: transparent;
+       border: 2px solid #d114a5;
+       border-radius: 50%;
+       font-size: 20px;
+       color:#FBF5DE;
+       text-decoration: none;
+       z-index: 1;
+       overflow: hidden;
+       transition: 3s;
+}
+.home-sci a:hover{
+    color: #081b29;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition:3s;
+}
+.home-sci a:hover::before{
+    width: 100%;
+}
+.home-imghover{
+position: absolute;
+top: 0;
+right: 30px;
+width: 100vw;
+height: 100%;
+background: transparent;
+transition: 3s;
+}
+.home-imghover:hover{
+  background:#081b29;
+  opacity: -10;
+}
+
+
+
+/* }KEYFRAMES ANIMATION */
+@keyframes showRIGHT{
+  100%{
+    width: 0;
+
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    padding: 20px 5%;
+    gap: 20px;
+  }
+
+  .home {
+    padding: 0 5%;
+  }
+
+  .home-contect {
+    max-width: 300px;
+  }
+
+  .home-contect h1 {
+    font-size: 32px; 
+    line-height: 1.3;
+  }
+
+  .home-contect h3 {
+    font-size: 26px;
+  }
+
+  .btn-box {
+    width: 280px;
+  }
+
+  .btn-box a {
+    width: 130px;
+    font-size: 17px;
+  }
+
+  .home-sci {
+    margin-left: 100px;
+    width: 160px;
+    bottom: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .header {
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .navber a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .home {
+    padding: 0 3%;
+  }
+
+  .home-contect {
+    max-width: 260px;
+  }
+
+  .home-contect h1 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .home-contect h3 {
+    font-size: 20px;
+  }
+
+  .home-contect p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .btn-box {
+    width: 220px;
+    height: 35px;
+  }
+
+  .btn-box a {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .home-sci {
+    margin-left: 60px;
+    width: 140px;
+    bottom: 30px;
+  }
+
+  .home-imghover {
+    right: 10px;
+  }
+}
+
